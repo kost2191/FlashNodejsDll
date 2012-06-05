@@ -1,0 +1,21 @@
+This is 8-bit Big BibTeX version 0.99c
+Implementation:  C for Unix
+Release version: 3.71 (31 May 2005)
+
+The 8-bit codepage and sorting file: cp1251.csf
+The top-level auxiliary file: thesis.aux
+I couldn't open style file gost705.bst
+---line 48 of file thesis.aux
+ : \bibstyle{gost705
+ :                  }
+I'm skipping whatever remains of this command
+I found no style file---while reading file thesis.aux
+
+Here's how much of BibTeX's memory you used:
+ Cites:                10 out of 5000
+ Fields:                0 out of 85000
+ Hash table:        18999 out of 19000
+ Strings:             102 out of 19000
+ String pool:         798 out of 500000
+ Wizard functions:      0 out of 10000
+(There were 2 error messages)

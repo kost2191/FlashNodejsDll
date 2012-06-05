@@ -1,0 +1,4 @@
+add,int,int,int,
+multiplication,int,int,int,
+subtraction,int,int,int,
+big

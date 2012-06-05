@@ -1,0 +1,84 @@
+\documentclass[bachelor, subf,href,colorlinks=true
+%,times        % шрифт Times как основной
+%,fixint=false % отключить прямые знаки интегралов
+]{disser}
+
+\usepackage[
+  a4paper, mag=1000, includefoot,
+  left=3cm, right=1cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm
+]{geometry}
+\usepackage{color}
+\usepackage[TS1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\ifpdf\usepackage{epstopdf}\fi
+\usepackage{graphicx}
+% Номера страниц сверху и по центру
+%\def\headfont{\small}
+%\pagestyle{headcenter}
+%\chapterpagestyle{empty}
+
+% Точка с запятой в качестве разделителя между номерами цитирований
+%\setcitestyle{semicolon}
+% Использовать полужирное начертание для векторов
+\let\vec=\mathbf
+
+% Включать подсекции в оглавление
+\setcounter{tocdepth}{2}
+
+\graphicspath{{fig/}}
+\usepackage{cmap}
+\usepackage{listings}
+\lstloadlanguages{C++, bash, Python, Java, PHP, Pascal}
+ \lstset{inputencoding=utf8, breaklines=true, extendedchars=false, numbers=left, language=C++,
+       frame=rl, rulesepcolor=\color{black}
+       }
+\renewcommand{\lstlistingname}{Листинг}
+
+\begin{document}
+
+\institution{Санкт-Петербургский государственный
+электротехнический университет «ЛЭТИ» им. В.И. Ульянова (Ленина) (СПбГЭТУ)}
+
+
+% Имя лица, допускающего к защите (зав. кафедрой)
+\apname{Советов Борис Яковлевич}
+
+\title{ВЫПУСКНАЯ РАБОТА\\БАКАЛАВРА}
+
+
+\topic{Использование динамических библиотек в рамках Flash-приложений}
+
+
+% Автор
+\author{Борисенко Константин Алексеевич} % ФИО
+\group{8372} % Группа
+\coursenum{,,,,,} % Номер специальности
+\course{..........} % Название специальности
+
+
+% Научный руководитель
+\sa      {Степуленок Денис Олегович}
+\sastatus{асс. каф. АСОиУ СПБГЭТУ}
+
+
+
+% Город и год
+\city{Санкт-Петербург}
+\date{\number\year}
+
+\maketitle
+\input{annotation}
+\tableofcontents
+\input{subject}
+\input{body1}
+\input{body2}
+\input{body3}
+\input{body4}
+\input{conclusion}
+\input{usedLiterature}
+
+\bibliography{thesis}
+\bibliographystyle{gost705}
+\end{document}
+
