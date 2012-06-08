@@ -20,21 +20,20 @@ http.createServer(function(req, response) {
     funcName = funcValue[0];
     funcValue.shift();
     console.log("SENDED!");
-  switch (funcName){
-     case "add": 
-        var rez = lib1.add(parseInt(funcValue[0]), parseInt(funcValue[1])) + "";
-        break;
-     case "multiplication":
-        var rez = lib1.multiplication(parseInt(funcValue[0]), parseInt(funcValue[1])) + "";
-        break; 
-     case "subtraction":
-        var rez = lib1.subtraction(parseInt(funcValue[0]), parseInt(funcValue[1])) + "";
-        break; 
-}
-//    var rez = lib1.funcName(parseInt(funcValue[0]), parseInt(funcValue[1])) + "";
-    
+    callMethod = "lib1." + funcName + "(";
+    for (i = 0; i < funcType.length; i ++){
+	callMethod = callMethod + funcValue[i]; 
+	if (i < funcType.length - 1) {
+		callMethod = callMethod + ",";
+	}
+	else{
+	  callMethod = callMethod + ")"; 
+	}
+console.log(callMethod);
+    }    
+      var rez = eval(callMethod) + "";
     response.write(rez);
-   console.log("rezult= " , rez);
+   console.log("rezult= " , rez );
   }
 
   response.end();
