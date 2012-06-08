@@ -3,7 +3,7 @@
 rem Makefile for documents and templates
 rem Author: Stanislav Kruchinin <stanislav.kruchinin@gmail.com>
 
-set latexnmk=call ..\..\include\latex.nmk.cmd
+set latexnmk=call latex.nmk.cmd
 
 if "%1"=="" (
 	%latexnmk%
